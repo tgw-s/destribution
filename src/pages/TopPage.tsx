@@ -1,8 +1,15 @@
 // FCはfunctional componentを作るためのモジュール
 import React, { FC } from 'react';
+import TopHeader from '../components/topPage/TopHeader';
+import TopMain from './TopMain';
 
 const TopPage: FC = () => {
-  return <h2>Top Page</h2>;
+  return (
+    <>
+      <TopHeader />
+      <TopMain />
+    </>
+  );
 };
 
 export default TopPage;
