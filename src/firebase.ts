@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
-import 'fireabase/firebase';
-import 'fireabase/firebase-storage';
+import 'firebase/firestore';
+import 'firebase/firebase-storage';
 
 var firebaseConfig = {
   apiKey: 'AIzaSyCRCilpmlxW7ujWjbU3CxFpZJSA5EJ9s3w',
@@ -14,4 +14,4 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-export default fireabase;
+export default firebase;

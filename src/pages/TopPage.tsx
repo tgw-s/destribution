@@ -4,6 +4,7 @@ import TopHeader from '../components/topPage/TopHeader';
 import TopMain from '../components/topPage/TopMain';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ResultPage from './ResultPage';
+import DownloadPage from './DownloadPage';
 
 const TopPage: FC = () => {
   return (
@@ -15,6 +16,9 @@ const TopPage: FC = () => {
         </Route>
         <Route path="/search/:keyword" exact>
           <ResultPage />
+        </Route>
+        <Route path="/download/:keyword" exact>
+          <DownloadPage />
         </Route>
       </Switch>
     </Router>
