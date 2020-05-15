@@ -1,8 +1,9 @@
 // FCはfunctional componentを作るためのモジュール
 import React, { FC } from 'react';
 import TopHeader from '../components/topPage/TopHeader';
-import TopMain from './TopMain';
+import TopMain from '../components/topPage/TopMain';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ResultPage from './ResultPage';
 
 const TopPage: FC = () => {
   return (
@@ -13,7 +14,7 @@ const TopPage: FC = () => {
           <TopMain />
         </Route>
         <Route path="/search/:keyword" exact>
-          検索結果
+          <ResultPage />
         </Route>
       </Switch>
     </Router>
